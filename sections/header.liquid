@@ -471,7 +471,7 @@
       {%- if section.settings.menu_type_desktop == 'dropdown' -%}
         
       {%- elsif section.settings.menu_type_desktop != 'drawer' -%}
-        <nav class="header__inline-menu">
+        {% comment %} <nav class="header__inline-menu">
           <ul class="list-menu list-menu--inline" role="list">
             {%- for link in section.settings.menu.links -%}
               <li>
@@ -514,7 +514,7 @@
               </li>
             {%- endfor -%}
           </ul>
-        </nav>
+        </nav> {% endcomment %}
       {%- endif -%}
     {%- endif -%}
 
