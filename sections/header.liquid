@@ -127,21 +127,17 @@
   <script src="{{ 'localization-form.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 
-<svg xmlns="http://www.w3.org/2000/svg" class="hidden">
-  <symbol id="icon-search" viewbox="0 0 18 19" fill="none">
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.03 11.68A5.784 5.784 0 112.85 3.5a5.784 5.784 0 018.18 8.18zm.26 1.12a6.78 6.78 0 11.72-.7l5.4 5.4a.5.5 0 11-.71.7l-5.41-5.4z" fill="currentColor"/>
-  </symbol>
-
-  <symbol id="icon-reset" class="icon icon-close"  fill="none" viewBox="0 0 18 18" stroke="currentColor">
-    <circle r="8.5" cy="9" cx="9" stroke-opacity="0.2"/>
-    <path d="M6.82972 6.82915L1.17193 1.17097" stroke-linecap="round" stroke-linejoin="round" transform="translate(5 5)"/>
-    <path d="M1.22896 6.88502L6.77288 1.11523" stroke-linecap="round" stroke-linejoin="round" transform="translate(5 5)"/>
-  </symbol>
-
-  <symbol id="icon-close" class="icon icon-close" fill="none" viewBox="0 0 18 17">
-    <path d="M.865 15.978a.5.5 0 00.707.707l7.433-7.431 7.579 7.282a.501.501 0 00.846-.37.5.5 0 00-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 10-.707-.708L8.991 7.853 1.413.573a.5.5 0 10-.693.72l7.563 7.268-7.418 7.417z" fill="currentColor">
-  </symbol>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="29" viewBox="0 0 30 29" id="">
+  <defs>
+    <style>
+      .cls-1 {
+        mix-blend-mode: lighten;
+      }
+    </style>
+  </defs>
+  <image id="ビットマップ" class="cls-1" width="30" height="29" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAdCAYAAAC9pNwMAAAD7ElEQVRIiYTMMQEAEBAAwDNZRLKpoZ0Wetg1eQEMfwGuRIRERcfEQMPBwsbNgg8eAAAA//98zbENABAAAEFjWMdgxrGMHQyh1DhRivDJt/9hjx9GZFR0TCcDDQXp07klLAAAAP//wiWR8////9doFhECq/7//y9NlMX//zMAAAAA//9CFwAF/UISLUQGz/7//29G0OL//xkAAAAA//900aENwCAQAMAbggHYA8EQNWzYCZowCJIZ6kkQ+E/w5y4ev2jhZOFDx8RGQsGDHPyPinH9xQEAAP//QnZFMRYfbP///782Hpdz////v/L///+/0fRd/f//PxdOff//MwAAAAD//4IxZP////8NTfMMaNATE2egxPUZTX8TTvX//zMAAAAA//+CMXrRNO0kNZX+//8/BM2M9////xfFqvb/fwYAAAAA//8CEbz///+/jqQB5HN1MiwG4Y1olqdjVff/PwMAAAD//2JiYGDwRksgOxkYGG6SVSgwMExF4ztgVcXAwAAAAAD//wJZnMXAwMCBJAYqjcgFJxkYGF4jaVZnYGBgxjCMgYEBAAAA//8CWWyBJvaQAou/MDAwPEHiC6F5CgIYGBgAAAAA//8CWfwPTYyRAovR9YMKCczKgIGBAQAAAP//All8BE0MvUAgBfAyMDDIIml4y8DA8APDAAYGBgAAAAD//wJZPJ2BgeE7kpgnBRZbMTAwCCPxQYkUPUQZGBgYGAAAAAD//4KVPqCSBgZ+/P//X5fM7AQq6ZBBIlZ1//8zAAAAAP//gjHa0TQc/P//PxOJlsahmfHq////gljV/v/PAAAAAP//gjFAdS+ozkUGi////89GpKW+WIrcXJzq//9nAAAAAP//QuZkoGkEgUP///+3xGMAqEhEDy0YABXD2PX9/88AAAAA//9CrxZnMjAwpGFJCnugBctdBgaG39AEBEpIAQwMDKJ4EtsMBgaGTAxRBgYGAAAAAP//wuaaKTh8QC6Yg2HH//8MAAAAAP//whUUMf///39Aok3Toe0zbGARShX7/z8DAAAA///Cl2D4/v//XwI1DL2hBwOP////P/////9WUD1i////P49D7XJ4Tvn/nwEAAAD//yKmeQsCoMJek4GBQZqBgYEF2ry5zcDAcIOBgeEDmlpQnG9jYGAwwWLOOnDTioHhNwAAAP//IqeQIAYL/f///zgOny/5//8/MwAAAP//ItbH5AB+aCMR1ChEBQwM6wEAAAD//6KlxSAA6nVsgbY6EYCB4RsAAAD//wJVErQEoPrZg4GBYS1S9XiBgYHBFgAAAP//olUco2NQal75////m+D23P//DAAAAAD//wMAfdWPNW1g9esAAAAASUVORK5CYII="/>
 </svg>
+
 
 {%- liquid
   for block in section.blocks
