@@ -469,7 +469,7 @@
 
     {%- if section.settings.menu != blank -%}
       {%- if section.settings.menu_type_desktop == 'dropdown' -%}
-        <nav class="header__inline-menu">
+        {% comment %} <nav class="header__inline-menu">
           <ul class="list-menu list-menu--inline" role="list">
             {%- for link in section.settings.menu.links -%}
               <li>
@@ -517,7 +517,7 @@
               </li>
             {%- endfor -%}
           </ul>
-        </nav>
+        </nav> {% endcomment %}
       {%- elsif section.settings.menu_type_desktop != 'drawer' -%}
         <nav class="header__inline-menu">
           <ul class="list-menu list-menu--inline" role="list">
@@ -597,7 +597,8 @@
     {%- endif -%}
 
     <div class="header__icons{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header__localization{% endif %}">
-      <div class="desktop-localization-wrapper">
+      
+    <div class="desktop-localization-wrapper">
         {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
           <localization-form class="small-hide medium-hide">
             {%- form 'localization', id: 'HeaderCountryForm', class: 'localization-form' -%}
