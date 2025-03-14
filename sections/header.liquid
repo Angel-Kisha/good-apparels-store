@@ -634,6 +634,7 @@
           </span>
         </a>
       {%- endif -%}
+
       <details-modal class="header__search">
         <details>
           <summary class="header__icon header__icon--search header__icon--summary link focus-inset modal__toggle" aria-haspopup="dialog" aria-label="{{ 'general.search.search' | t }}">
@@ -715,8 +716,6 @@
           </div>
         </details>
       </details-modal>
-
-      
 
       {%- for block in section.blocks -%}
         {%- case block.type -%}
