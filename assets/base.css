@@ -2462,6 +2462,7 @@ product-info .loading-overlay:not(.hidden) ~ *,
   display: flex;
   grid-area: icons;
   justify-self: end;
+  align-items: center;
 }
 
 .header__icons .shopify-app-block {
